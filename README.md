@@ -1,6 +1,11 @@
 # 🚀 Git & GitHub Complete Learning Guide
 *My Beginner-Friendly Documentation*
 
+<a href="git_note_with_command.pdf" download="git_note_with_command.pdf">
+    <button>Download PDF</button>
+</a>
+
+
 ---
 
 ## 📌 Table of Contents
