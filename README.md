@@ -141,27 +141,81 @@ git config --list
 
 A Git repository is a folder where Git tracks all changes.
 
-### 🔹 `git init` Definition
+### 🔹 Git Repository Setup Commands
 
 ```bash
+# Initialize Git in the folder
 git init
+
+# Connect with remote repository
+git remote add origin <repository-link>
+
+# Verify remote connection
+git remote -v
+
+# Check current branch
+git branch
+
+# Rename branch to main
+git branch -M main
+
+# Push code to remote repository
+git push origin main
 ```
 
-**Initializes a directory as a Git repository.**
+---
 
-It creates a hidden `.git` folder that stores:
-- Commit history
-- Branches
-- Configuration
+### 📋 Command Breakdown
+
+| Command | Purpose |
+|---------|---------|
+| `git init` | Initializes a directory as a Git repository |
+| `git remote add origin <link>` | Connects local repository with remote GitHub repository |
+| `git remote -v` | Verifies and displays remote repository connections |
+| `git branch` | Shows all branches in the repository |
+| `git branch -M main` | Renames current branch to "main" |
+| `git push origin main` | Pushes local commits to remote main branch |
+
+---
+
+### 🎯 What `git init` Creates
+
+When you run `git init`, it creates a hidden `.git` folder that stores:
+- 📜 Commit history
+- 🌿 Branches
+- ⚙️ Configuration
+- 🔗 Remote connections
 
 📌 **Use this when starting a new project.**
 
-**Example:**
+---
+
+### 💡 Complete Setup Example
 
 ```bash
+# Step 1: Create and navigate to project folder
 mkdir my-project
 cd my-project
+
+# Step 2: Initialize Git
 git init
+
+# Step 3: Connect to GitHub repository
+git remote add origin https://github.com/username/my-project.git
+
+# Step 4: Verify connection
+git remote -v
+
+# Step 5: Check and rename branch (if needed)
+git branch -M main
+
+# Step 6: Create your first file
+echo "# My Project" > README.md
+
+# Step 7: Stage, commit, and push
+git add .
+git commit -m "Initial commit"
+git push -u origin main
 ```
 
 [⬆️ Back to Table of Contents](#-table-of-contents)
