@@ -1,0 +1,3 @@
+This is the contribution file i made form other account to learn how contribution work in github.
+
+This is a learning document by which i can learn about git and github and how the contribution work here. 
